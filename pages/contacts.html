@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script async src="../js/script.js">
+    </script>
+    <title>Сайт группы</title>
+</head>
+
+<body class="page">
+    <header class="shell">
+        <img class="logo" src="../img/logo.svg" alt="logo">
+        <div class="site-menu">
+            <a class="menu-link" href="../pages/index.html">Главная</a>
+            <a class="menu-link" href="../pages/students.html">Студенты</a>
+            <a class="menu-link" href="../pages/about.html">О курсе</a>
+            <a class="menu-link" href="#">Контакты</a>
+        </div>
+        <a><button class="button-enter">Войти</button></a>
+        <div class="login-popup">
+            <img class="popup-close" alt="Закрытие" src="../img/close.svg">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form">
+
+                <input class="login-enter" name="login" type="text" placeholder="Логин" required>
+                <input class="login-enter" name="password" type="text" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+
+            </form>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="address-title">
+            <h1 class="address">Как нас найти 🗺️</h1>
+        </div>
+        <p class="map-img">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6227e353b144a902e38b8401ae34d0f849c2a89e385c9059c2c75df2afa4c8b6&amp;width=1268&amp;height=370&amp;lang=ru_RU&amp;scroll=true"></script>
+        </p>
+        <div class="address">
+            <h2 class="address-text-title">Наши контакты</h2>
+            <p class="address-text">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+            <p class="address-text">Тел: +7 (812) 555-55-55</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="allres">
+            2022 &copy;&nbsp; <a class="footer-link">учебный центр</a>
+        </p>
+    </footer>
+</body>
+
+</html>

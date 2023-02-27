@@ -1,0 +1,450 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header.shell {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto';
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 80px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    margin: 16px 17px;
+}
+
+.site-menu {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.menu-link:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.button-enter {
+    background-color: #EA5D21;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 15px 16px;
+    padding: 16px 50px;
+    cursor: pointer;
+}
+
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 50px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;
+    background-color: #FFFFFF
+}
+
+.popup-close {
+    position: absolute;
+    right: 20px;
+    width: 32px;
+    padding: 5px 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.login-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form>input {
+    width: 100%;
+    max-width: 500px;
+    min-height: 35px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+.login-enter {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 10px;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 152px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #EA6113;
+    border: none;
+    cursor: pointer;
+}
+
+.show-popup {
+    display: block;
+}
+
+.parol {
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+.picture {
+    width: 100%;
+    max-width: 523px;
+}
+
+.main-head_01 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.main-head_02 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.shell_01 {
+    max-width: 634px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.learning_together {
+    float: right;
+    margin: -41px 23px;
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #646464;
+
+}
+
+.main-student {
+
+    display: flex;
+    height: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 31px;
+    margin: 35px 0 24px 0;
+    font-family: 'Roboto';
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+.student-name {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+}
+
+.students {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.student {
+    padding-left: 50px;
+}
+
+.student-photo:hover {
+    border: #86C6F4 solid 5px;
+}
+
+.new-student-beginner {
+    position: relative;
+}
+
+
+.scale {
+    transition: 0.5s;
+    /* Время  */
+}
+
+.scale:hover {
+    transform: scale(1.1);
+    /* Масштаб */
+}
+
+.new-student {
+    position: absolute;
+    right: -18px;
+    top: -12px;
+    width: 94px;
+    height: 24px;
+    background-color: #3AA828;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+    padding-left: 216px;
+}
+
+.about-course {
+    display: flex;
+    margin: 33px 0 0 0;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 25px;
+}
+
+.look-our-video {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.about-us-video {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    padding-bottom: 20px;
+}
+
+.map-img {
+    height: 370px;
+    width: 1268px;
+    left: 86px;
+    top: 173px;
+
+}
+
+.address {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-left: 186px;
+}
+
+.address-text-title {
+    font-family: 'Roboto';
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.address-text {
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.video {
+    width: 100%;
+    min-width: 820px;
+    max-width: 549.33px;
+    margin-top: -10px;
+    margin-bottom: 200px;
+    border: 2px solid #EA5D21;
+
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.allres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 19px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    font-family: 'Segoe UI';
+    color: #ea611390;
+    text-align: center;
+    border: 1px solid #ea621340;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer-link {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/* Адаптивность*/
+
+@media (max-width: 1300px) {
+    .about {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:1300px) {
+    .main {
+        width: auto;
+    }
+}
+
+@media (max-width:750px) {
+    .menu-link {
+        font-size: 15px;
+    }
+
+    .button-enter {
+        padding: 12px 25px;
+    }
+
+    .shell_01 {
+        width: auto;
+    }
+}
+
+@media (max-width:608px) {
+    .menu-link {
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:562px) {
+    .button-enter {
+        padding: 10px 20px;
+    }
+
+    .menu-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:520px) {
+    .menu-link {
+        margin: 10px 0;
+
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+    }
+
+    .button-enter {
+        padding: 5px 10px;
+    }
+
+    header.shell {
+        flex-direction: column;
+    }
+
+    .site-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .students {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
